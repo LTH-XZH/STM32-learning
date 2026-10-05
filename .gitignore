@@ -1,0 +1,45 @@
+# ==============================
+# CLion / JetBrains
+# ==============================
+.idea/
+*.iml
+
+# ==============================
+# CMake
+# ==============================
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+install_manifest.txt
+
+# ==============================
+# Build output
+# ==============================
+build/
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.d
+
+# ==============================
+# STM32 / CubeMX generated
+# ==============================
+*.launch
+*.su
+
+# ==============================
+# Debug / IDE temporary files
+# ==============================
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
