@@ -64,7 +64,7 @@ static uint8_t loadLedState(void );
 /* USER CODE BEGIN 0 */
 static void SaveLedState(uint8_t ledstate) {
     // Flash相关命令代号详见产品说明文档
-    // #1.写使能
+      // #1.写使能
     uint8_t writeEnabledCmd[] = {0x06};
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
     HAL_SPI_Transmit(&hspi1, writeEnabledCmd, 1, HAL_MAX_DELAY);
@@ -138,6 +138,7 @@ int main(void) {
     uint8_t pre = 1;
     uint8_t cur = 1;
     uint8_t led_state = 0;
+    led_state = loadLedState();
     led_state = loadLedState();
     if (led_state == 1)
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
