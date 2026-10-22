@@ -4,7 +4,7 @@
 
 | 项目 | 信息 |
 | --- | --- |
-| **Core / 使用芯片** | STM32F103C8TT6 |
+| **Core / 使用芯片** | STM32F103C8T6 |
 | **Toolchain / 工具链** | STM32CubeMX + CLion |
 | **Build System / 构建系统** | CMake |
 | **Library / 开发库** | HAL |
